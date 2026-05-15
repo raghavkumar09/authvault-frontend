@@ -7,12 +7,13 @@
 @layer base {
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   
-  html { scroll-behavior: smooth; }
+  html { scroll-behavior: smooth; overflow-x: hidden; }
   
   body {
     @apply font-sans antialiased leading-relaxed min-h-screen;
     background: var(--bg-primary);
     color: var(--text-primary);
+    overflow-x: hidden;
   }
 
   #root { @apply min-h-screen flex flex-col; }

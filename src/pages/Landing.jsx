@@ -31,7 +31,7 @@ const Landing = () => {
             <span>Production-Ready MERN Stack</span>
           </div>
 
-          <h1 className="text-6xl md:text-7xl font-extrabold mb-8 tracking-tight animate-slideUp">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold mb-8 tracking-tight animate-slideUp">
             Master Your <span className="text-gradient">Identity</span> Management
           </h1>
 
