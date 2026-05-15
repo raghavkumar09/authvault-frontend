@@ -21,30 +21,6 @@ const AdminPanel = () => {
           </div>
           <p className="text-3xl font-bold">{pagination.total || '...'}</p>
         </div>
-        
-        <div className="glass-card p-6">
-          <div className="flex items-center gap-3 text-green-400 mb-2">
-            <Activity size={20} />
-            <span className="text-sm font-medium">Active Now</span>
-          </div>
-          <p className="text-3xl font-bold">1</p>
-        </div>
-
-        <div className="glass-card p-6 border-yellow-500/20">
-          <div className="flex items-center gap-3 text-yellow-400 mb-2">
-            <AlertTriangle size={20} />
-            <span className="text-sm font-medium">Flagged</span>
-          </div>
-          <p className="text-3xl font-bold">0</p>
-        </div>
-
-        <div className="glass-card p-6">
-          <div className="flex items-center gap-3 text-blue-400 mb-2">
-            <Shield size={20} />
-            <span className="text-sm font-medium">Admins</span>
-          </div>
-          <p className="text-3xl font-bold">1</p>
-        </div>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -55,16 +31,6 @@ const AdminPanel = () => {
             <LogItem type="user" message="New user registration: 'john@example.com'" time="15 mins ago" />
             <LogItem type="system" message="Redis cache invalidated for pattern 'users:*'" time="1 hour ago" />
             <LogItem type="auth" message="Failed login attempt from IP 192.168.1.1" time="2 hours ago" />
-          </div>
-        </div>
-
-        <div className="glass-card p-8">
-          <h3 className="text-xl font-bold mb-6">Quick Actions</h3>
-          <div className="grid grid-cols-2 gap-4">
-            <ActionButton label="Export Users" color="bg-blue-600" />
-            <ActionButton label="Flush Cache" color="bg-red-600" />
-            <ActionButton label="System Backup" color="bg-indigo-600" />
-            <ActionButton label="Email Settings" color="bg-purple-600" />
           </div>
         </div>
       </div>

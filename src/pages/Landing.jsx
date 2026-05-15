@@ -30,13 +30,13 @@ const Landing = () => {
             <Zap size={16} />
             <span>Production-Ready MERN Stack</span>
           </div>
-          
+
           <h1 className="text-6xl md:text-7xl font-extrabold mb-8 tracking-tight animate-slideUp">
             Master Your <span className="text-gradient">Identity</span> Management
           </h1>
-          
+
           <p className="text-xl text-gray-400 mb-12 max-w-2xl mx-auto animate-slideUp" style={{ animationDelay: '0.1s' }}>
-            A secure, scalable, and stunningly beautiful authentication platform. 
+            A secure, scalable, and stunningly beautiful authentication platform.
             Built with JWT rotation, Redis caching, and RBAC.
           </p>
 
@@ -91,7 +91,6 @@ const Landing = () => {
           <div className="flex gap-6 text-sm text-gray-400">
             <a href="#" className="hover:text-white transition-colors">Privacy</a>
             <a href="#" className="hover:text-white transition-colors">Terms</a>
-            <a href="#" className="hover:text-white transition-colors">Github</a>
           </div>
         </div>
       </footer>
