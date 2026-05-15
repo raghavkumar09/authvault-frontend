@@ -58,7 +58,7 @@ const UserCard = ({ user, onRoleChange, onDelete }) => {
         </p>
         <p className="text-gray-400">
           <span className="text-gray-500 mr-2">Joined:</span>
-          {new Date(user.createdAt).toLocaleDateString()}
+          {new Date(user.created_at || user.createdAt).toLocaleDateString()}
         </p>
         <div className="flex items-center gap-2 mt-2 pt-3 border-t border-[rgba(255,255,255,0.05)]">
           <span className={`w-2 h-2 rounded-full ${user.isEmailVerified ? 'bg-green-500' : 'bg-red-500'}`}></span>

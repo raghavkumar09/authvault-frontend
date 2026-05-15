@@ -25,7 +25,7 @@ const Dashboard = () => {
             </div>
           </div>
         </div>
-        
+
         <div className="glass-card p-6 flex items-start gap-4">
           <div className="p-3 bg-blue-500/20 text-blue-400 rounded-xl">
             <Activity size={24} />
@@ -33,7 +33,7 @@ const Dashboard = () => {
           <div>
             <p className="text-sm text-gray-400 mb-1">Last Login</p>
             <span className="text-xl font-bold">
-              {user?.lastLoginAt ? new Date(user.lastLoginAt).toLocaleDateString() : 'Today'}
+              {user?.last_login_at || user?.lastLoginAt ? new Date(user.last_login_at || user.lastLoginAt).toLocaleDateString() : 'Today'}
             </span>
           </div>
         </div>
@@ -57,8 +57,8 @@ const Dashboard = () => {
         <p className="text-gray-400 mb-6">
           Access the full directory of users in the system. As an admin, you can manage roles and delete accounts.
         </p>
-        <a 
-          href="/users" 
+        <a
+          href="/users"
           className="inline-flex items-center justify-center px-6 py-2.5 bg-white text-black font-medium rounded-xl hover:bg-gray-100 transition-colors"
         >
           View Users List
